@@ -1,0 +1,22 @@
+// Family map group, used via +mapgroup mg_family (entrypoint.sh).
+"GameModes_Server.txt"
+{
+	"mapgroups"
+	{
+		"mg_family"
+		{
+			"name"		"mg_family"
+			"maps"
+			{
+				"de_dust2"		""
+				"de_mirage"		""
+				"de_inferno"	""
+				"de_overpass"	""
+				"de_train"		""
+				"de_cache"		""
+				"de_nuke"		""
+				"de_vertigo"	""
+			}
+		}
+	}
+}

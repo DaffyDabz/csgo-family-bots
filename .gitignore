@@ -1,0 +1,14 @@
+# Build outputs stay out of git; deploy.sh copies them from this folder.
+# Built from source outside this repo (see README: gbe_fork, csgo_gc) or by plugin/build.sh:
+#   overlay/bin/steamclient.so           gbe_fork Linux steamclient (github.com/Detanup01/gbe_fork)
+#   overlay/csgo_gc/csgo_gc.so           csgo_gc local Game Coordinator (github.com/mikkokko/csgo_gc)
+#   overlay/srcds_linux                  csgo_gc launcher            same build
+#   overlay/csgo/addons/family_party.so  family party plugin         plugin/build.sh (source in plugin/)
+overlay/bin/steamclient.so
+overlay/csgo_gc/csgo_gc.so
+overlay/srcds_linux
+overlay/csgo/addons/family_party.so
+
+# python bytecode
+__pycache__/
+*.pyc

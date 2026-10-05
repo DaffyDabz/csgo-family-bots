@@ -1,0 +1,55 @@
+# Family CS:GO bot roster (step 8). One bot per line: name, weapon template, starting elo.
+# Edit here, then: python make_botprofile.py  (writes ../overlay/csgo/botprofile.db + ../overlay/csgo/addons/family_roster.txt)
+# Elo 300 (easier than Valve's Easy, for young kids) to 2400, denser at the bottom (elo = 300 + 2100 * (i/49)^1.5): every person starts at 300. Live elo moves in family_elo.json; this is only the start.
+# STEP 10: column 4 = specialist (1 in 4, picked from the seed, "-" = all-round): Aimer Brain Rat Entry Nade-nerd Anchor;
+# its dial offsets are in make_botprofile.py (ARCHETYPES). A bot keeps its dials forever unless this column changes.
+Calvin   Spray    300  -
+Jenssen  Spray    306  -
+Adam     Rifle    317  -
+Andy     PunchT   332  -
+Dennis   Rifle    349  -
+Duffy    Sniper   368  -
+Ian      Sniper   390  Brain
+Mike     RifleT   413  -
+Adrian   Sniper   439  Anchor
+Bank     Sniper   465  Nade-nerd
+Brad     Rifle    494  -
+Connor   Rifle    523  -
+Dave     RifleT   555  Aimer
+Derek    Rifle    587  -
+Don      Shotgun  621  -
+Eric     Rifle    656  -
+Erik     RifleT   692  -
+Finn     Rifle    729  Rat
+Kevin    Rifle    768  -
+Reed     RifleT   807  -
+Rick     Rifle    848  -
+Troy     Rifle    889  -
+Wade     RifleT   932  -
+Wayne    Rifle    975  -
+Xander   RifleT   1020  -
+Brian    Rifle    1065  -
+Chad     Rifle    1112  -
+Chet     RifleT   1159  -
+Gabe     Spray    1207  Anchor
+Hank     Shotgun  1256  Aimer
+Ivan     RifleT   1306  Rat
+Jim      Punch    1357  -
+Joe      PunchT   1408  -
+John     Rifle    1461  Brain
+Tony     Rifle    1514  -
+Tyler    PunchT   1568  -
+Victor   Rifle    1622  -
+Zane     Spray    1678  -
+Cory     Power    1734  -
+Quinn    Sniper   1791  Entry
+Seth     Rifle    1849  -
+Vinny    RifleT   1907  -
+Arnold   RifleT   1966  -
+Brett    Rifle    2026  -
+Kurt     Punch    2087  -
+Kyle     Sniper   2148  -
+Zach     Rifle    2210  Entry
+Cliffe   Rifle    2273  -
+Wolf     Rifle    2336  Nade-nerd
+Gunner   RifleT   2400  -

@@ -1,0 +1,11 @@
+*.sh text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+Dockerfile text eol=lf
+overlay/** text eol=lf
+# binaries shipped in overlay/ (steamclient.so, csgo_gc.so, srcds_linux, addons/*.so) are never text
+*.so binary
+overlay/srcds_linux binary
+# STEP 8: generated navmeshes and the generated botprofile.db (CRLF, like Valve's) are never converted
+*.nav binary
+overlay/csgo/botprofile.db binary

@@ -1,0 +1,21 @@
+# CS:GO legacy dedicated server - lives at /opt/csgo/ in WSL (native Docker Engine).
+# Container name `csgo` (csgo-ctl.sh, DEV panel). Host networking: game + rcon on
+# 27025 (udp+tcp); Unturned owns 27015-27017. LAN only (sv_lan 1), no GSLT.
+services:
+  csgo:
+    build: .
+    image: family/csgo:latest
+    container_name: csgo
+    network_mode: host
+    restart: on-failure:3
+    ulimits:
+      core: 0
+    stop_grace_period: 20s
+    environment:
+      PORT: "27025"
+      START_MAP: "${START_MAP:-de_dust2}"
+      EXTRA_ARGS: "${EXTRA_ARGS:-}"
+    volumes:
+      - ./server:/opt/csgo/server                  # assembled by assemble.sh
+      - ${CSGO_CLIENT:-/srv/csgo/game}:${CSGO_CLIENT:-/srv/csgo/game}:ro   # depot 731 symlink targets (same path as assemble.sh)
+      - ./rcon_password:/run/csgo/rcon_password:ro # generated, never in the repo
