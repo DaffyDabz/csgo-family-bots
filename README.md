@@ -500,4 +500,4 @@ If the memory layout ever does not match, steering switches itself off for that 
   offline server possible (see their repos for their licenses).
 - The bot names in `bots/roster.txt` are the classic CS bot names.
 
-All rights reserved for now.
+The plugin, scripts and configs here are by DaffyDabz, released under the [MIT License](LICENSE). Valve's game and its stock bot AI are not covered.
